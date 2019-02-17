@@ -9,7 +9,23 @@ package hotelfly;
  *
  * @author temp
  */
-public class Corporate {
+public class Corporate extends Customer {
+    
     String company_name;
+    
+     public Corporate (String cname)
+    {
+        this.company_name=cname;
+    }
+    
+    public void Setcompany_name(String cname)
+    {
+        this.company_name=cname;
+    }
+    public String Getcompany_name()
+    {
+        return company_name;
+    }
+    
     
 }

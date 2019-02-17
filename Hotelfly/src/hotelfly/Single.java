@@ -9,7 +9,23 @@ package hotelfly;
  *
  * @author temp
  */
-public class Single {
+public class Single extends Customer
+{
     String address;
+    
+    
+    public Single (String add)
+    {
+        this.address=add;
+    }
+    
+    public void Setaddress(String add)
+    {
+        this.address=add;
+    }
+    public String Getaddress()
+    {
+        return address;
+    }
     
 }
