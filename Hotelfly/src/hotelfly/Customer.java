@@ -13,13 +13,18 @@ public class Customer {
     String firstName,lastName,email;
     int phoneNo;
     
-    public Customer(String fname,String lname,String e_mail,int pno){
-        firstName=fname;
-        lastName=lname;
-        email=e_mail;
-        phoneNo=pno;
+    public void setFirstName(String fn){
+       firstName=fn;
     }
-    
+    public void setLastName(String ln){
+       lastName=ln;
+    }
+    public void setEmail(String en){
+       email=en;
+    }
+    public void setPhoneNo(int pn){
+       phoneNo=pn;
+    }
     public String getFirstName(){
         return firstName;
     }
