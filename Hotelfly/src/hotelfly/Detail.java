@@ -11,4 +11,5 @@ package hotelfly;
  */
 public class Detail {
     
+    int numberOfPersons;
 }
