@@ -12,7 +12,7 @@ package hotelfly;
 public class Single extends Customer
 {
     String address;
-    
+    Customer c;
     
     public Single (String add)
     {

@@ -62,5 +62,9 @@ public class Rooms {
     {
           return Price;
     }
-
+    
+    public void display()
+    {
+        System.out.println("No of rooms: "+Number+"\nCapacity: "+Capacity+"\nType: "+ Type+" Price: "+Price+"$");
+    }
 }
