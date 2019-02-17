@@ -10,5 +10,57 @@ package hotelfly;
  * @author 1895212
  */
 public class Rooms {
+    public int Number, Capacity;
+    String Type;
+    Double Price;
     
+    public Rooms(int N, int C, String T, Double P)
+    {
+        this.Number = N;
+        this.Capacity = C;
+        this.Type = T;
+        this.Price = P;
+        
+    }
+    
+    public void setNumber(int N)
+    {
+        this.Number=N;
+    }
+    
+    public int getNumber()
+    {
+        return Number;
+    }
+    
+    public void setCapacity(int C)
+    {
+        this.Capacity = C;
+    }
+    
+    public int getCapacity()
+    {
+        return Capacity;
+    }
+    
+    public void setType(String T)
+    {
+        this.Type = T;
+    }
+    
+    public String getType()
+    {
+       return Type;
+    }
+    
+    public void setPrice(double P)
+    {
+        this.Price = P;
+    }
+    
+    public double getPrice()
+    {
+          return Price;
+    }
+
 }
