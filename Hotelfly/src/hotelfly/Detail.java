@@ -12,4 +12,12 @@ package hotelfly;
 public class Detail {
     
     int numberOfPersons;
+   
+    public void setNumberOfPerson(int n){
+        numberOfPersons=n;
+    }
+    
+    public int getNumberOfPerson(){
+        return numberOfPersons;
+    }
 }
