@@ -13,4 +13,24 @@ public class Customer {
     String firstName,lastName,email;
     int phoneNo;
     
+    public Customer(String fname,String lname,String e_mail,int pno){
+        firstName=fname;
+        lastName=lname;
+        email=e_mail;
+        phoneNo=pno;
+    }
+    
+    public String getFirstName(){
+        return firstName;
+    }
+    
+    public String getLastName(){
+        return lastName;
+    }
+    public String getEmail(){
+        return email;
+    }
+    public int phoneNo(){
+        return phoneNo;
+    }
 }
