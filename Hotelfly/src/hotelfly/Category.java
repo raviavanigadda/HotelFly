@@ -53,4 +53,10 @@ public int getId()
 {
 return id;
 }
+
+public void display()
+{ 
+    System.out.println("Delux rooms :"+name+"\ndescription: "+description+"\n Room type :"+type+"\n id :"+id);
+}
+
 }

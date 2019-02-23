@@ -55,5 +55,8 @@ public class Hotel {
    return id;
    }
 
-
+public void display()
+{
+    System.out.println("Customer name: "+Name+"\nAddress :"+Address+"\nPhone :"+Phone+"\nid :"+id);
+}
 }
