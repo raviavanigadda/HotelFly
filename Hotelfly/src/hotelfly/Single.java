@@ -38,5 +38,9 @@ public class Single extends Customer
     {
         return id;
     }
+      public void display()
+      {
+          System.out.println("address:" +address+"/nid: "+id);
+      }   
     
 }

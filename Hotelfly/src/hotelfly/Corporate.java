@@ -37,6 +37,10 @@ public class Corporate extends Customer {
     {
         return id;
     }
-    
+       public void display()
+      {
+          System.out.println("company_name:"+company_name+"/nid:"+id);
+           
+      }
     
 }
