@@ -12,19 +12,30 @@ package hotelfly;
 public class Corporate extends Customer {
     
     String company_name;
+    int id;
+
     
-     public Corporate (String cname)
+     public Corporate (String cname,int id)
     {
         this.company_name=cname;
+        this.id=id;
     }
     
     public void Setcompany_name(String cname)
     {
         this.company_name=cname;
     }
+       public void Setid(int id)
+    {
+        this.id=id;
+    }
     public String Getcompany_name()
     {
         return company_name;
+    }
+      public int Getid()
+    {
+        return id;
     }
     
     
