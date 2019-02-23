@@ -14,6 +14,16 @@ public class Customer {
     int phoneNo;
     int id;
     
+   public Customer(String fName, String lName, String email, int ph, int id)
+   {
+       this.firstName = fName;
+       this.lastName = lName;
+       this.email = email;
+       this.phoneNo = ph;
+       this.id = id;
+      
+              
+   }
     public void setId(int i){
         id=i;
     }
@@ -32,7 +42,6 @@ public class Customer {
     public String getFirstName(){
         return firstName;
     }
-    
     public String getLastName(){
         return lastName;
     }
@@ -46,10 +55,10 @@ public class Customer {
         return id;
     }
     public void displayCustomer(){
-        System.out.println(firstName+"");
-        System.out.println(lastName+"");
-        System.out.println(email+"");
-        System.out.println(phoneNo+"");
-        System.out.println(id+"");
+        System.out.println("First Name: "+firstName+"");
+        System.out.println("Last Name: "+lastName);
+        System.out.println("Email: "+email);
+        System.out.println("Phone number: "+phoneNo);
+        System.out.println("ID: "+id);
     }
 }
