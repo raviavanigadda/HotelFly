@@ -12,20 +12,31 @@ package hotelfly;
 public class Single extends Customer
 {
     String address;
+    int id;
+    
     Customer c;
     
-    public Single (String add)
+    public Single (String add,int id)
     {
         this.address=add;
+        this.id=id;
     }
     
     public void Setaddress(String add)
     {
         this.address=add;
     }
+     public void Setid(int id)
+    {
+        this.id=id;
+    }
     public String Getaddress()
     {
         return address;
+    }
+      public int Getid()
+    {
+        return id;
     }
     
 }

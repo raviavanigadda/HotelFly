@@ -12,13 +12,15 @@ package hotelfly;
 public class Hotel {
     String Name;
     String Address;
-    int Phone;
+    int Phone,id;
     
-    public Hotel( String N,String A,int P)
+    
+    public Hotel( String N,String A,int P,int I)
     {
         this.Name=N;
         this.Address=A;
-        this.Phone=P;    
+        this.Phone=P; 
+        this.id=I;
     }    
     public void setName( String N)
     {
@@ -26,7 +28,7 @@ public class Hotel {
     }
     public String getName ()
     {
-    return(Name);
+    return Name;
     }
     public void setAddress(String A)
     {
@@ -34,7 +36,7 @@ public class Hotel {
     }
     public String getAddress()
     {
-      return(Address);  
+      return Address;  
     }
     public void setPhone(int P)
     {
@@ -42,8 +44,16 @@ public class Hotel {
     }
     public int getPhone()        
     {
-    return(Phone);
+    return Phone;
     }
+    public void setId(int I)
+   {
+    this.id=I;
+   }
+   public int getId()
+   {
+   return id;
+   }
 
 
 }

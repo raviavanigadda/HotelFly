@@ -15,9 +15,10 @@ import java.text.SimpleDateFormat;
  */
 public class Booking {
     public Date BookingDate,EndDate;
-    int Duration;
+    int Duration,id;
     Date Bookingdate; // = parseDate("17-02-2019");
     Customer c;
+    
 
    /* public Booking(Date Bdate, Date Edate, int Duration)
     {
@@ -25,6 +26,17 @@ public class Booking {
         this.EndDate = Edate;
         this.Duration = Duration;
     }*/
+    
+    public void setId(int I)
+    {
+        this.id=I;
+    }
+    
+    public int getId()
+    {
+        return id;
+    }
+    
     public void setBookingdate(String Bdate)
     {
         //this.date = Bdate;
