@@ -12,7 +12,11 @@ package hotelfly;
 public class Customer {
     String firstName,lastName,email;
     int phoneNo;
+    int id;
     
+    public void setId(int i){
+        id=i;
+    }
     public void setFirstName(String fn){
        firstName=fn;
     }
@@ -38,6 +42,8 @@ public class Customer {
     public int phoneNo(){
         return phoneNo;
     }
-    
+    public int getId(){
+        return id;
+    }
     
 }
