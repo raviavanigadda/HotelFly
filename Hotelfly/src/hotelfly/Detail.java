@@ -14,6 +14,12 @@ public class Detail {
     int numberOfPersons;
     int id;
     
+    public Detail (int n,int id)
+    {
+        this.numberOfPersons=n;
+        this.id=id;
+    } 
+    
    public void setId(int i){
        id=i;
    }
@@ -31,7 +37,7 @@ public class Detail {
     }
     
     public void displayDetails(){
-        System.out.println(numberOfPersons+"");
-        System.out.println(id+"");
+        System.out.println("No of Persons: "+ numberOfPersons);
+        System.out.println("Detail ID: "+id);
     }
 }
