@@ -29,4 +29,9 @@ public class Detail {
     public int getId(){
         return id;
     }
+    
+    public void displayDetails(){
+        System.out.println(numberOfPersons+"");
+        System.out.println(id+"");
+    }
 }
