@@ -45,5 +45,11 @@ public class Customer {
     public int getId(){
         return id;
     }
-    
+    public void displayCustomer(){
+        System.out.println(firstName+"");
+        System.out.println(lastName+"");
+        System.out.println(email+"");
+        System.out.println(phoneNo+"");
+        System.out.println(id+"");
+    }
 }
