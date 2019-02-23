@@ -13,14 +13,26 @@ public class Rooms {
     public int Number, Capacity;
     String Type;
     Double Price;
+    int id;
     
-    public Rooms(int N, int C, String T, Double P)
+    public Rooms(int id, int N, int C, String T, Double P)
     {
+        this.id = id;
         this.Number = N;
         this.Capacity = C;
         this.Type = T;
         this.Price = P;
         
+    }
+    
+    public void setId(int I)
+    {
+        this.id=I;
+    }
+    
+    public int getId()
+    {
+        return id;
     }
     
     public void setNumber(int N)

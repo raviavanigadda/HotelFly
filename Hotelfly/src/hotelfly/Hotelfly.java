@@ -19,14 +19,14 @@ public class Hotelfly {
         Booking b = new Booking();
         Customer c = new Customer();
         Single s = new Single("576 Montrose Ave, NDG");
-        Rooms r = new Rooms(5,2,"Delux Room", 1670.0);
+       // Rooms r = new Rooms(5,2,"Delux Room", 1670.0);
         c.setFirstName("M.Johnson Michelle");
         c.setPhoneNo(438874456);
         b.setBookingdate("17-02-2019");
         b.setDuration(5);
         System.out.println("\nBooking Date: "+b.BookingDate+"\nCustomer Name: "+c.firstName+"\nPhone no: "+c.phoneNo+
                 "\nAddress: "+s.address+"\nDuration: "+b.Duration+" days");
-        r.display();
+        //r.display();
     }
     
 }
