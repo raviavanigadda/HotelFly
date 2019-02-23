@@ -17,6 +17,7 @@ public class Corporate extends Customer {
     
      public Corporate (String cname,int id)
     {
+        super("Mr Parry","Micheal","parrym92@gmail.com",43852000,161);
         this.company_name=cname;
         this.id=id;
     }

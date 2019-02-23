@@ -13,11 +13,11 @@ public class Single extends Customer
 {
     String address;
     int id;
-    
-    Customer c;
+ 
     
     public Single (String add,int id)
     {
+        super("Mr Parry","Micheal","parrym92@gmail.com",43852000,161);
         this.address=add;
         this.id=id;
     }
@@ -40,7 +40,7 @@ public class Single extends Customer
     }
       public void display()
       {
-          System.out.println("address:" +address+"/nid: "+id);
+          System.out.println("Address:" +address+"\nSingle Room id: "+id);
       }   
     
 }
