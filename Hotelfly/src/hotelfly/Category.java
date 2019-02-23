@@ -11,11 +11,13 @@ package hotelfly;
  */
 public class Category {
 String name ,description,type;
+int id;
 
-public Category ( String N,String D,String T)
+public Category ( String N,String D,String T,int I)
 {       this.name=N;
         this.description=D;
         this.type=T;
+        this.id=I;
 }
 
 public void setName(String N)
@@ -24,7 +26,7 @@ public void setName(String N)
     }
 public String getName()
    {
-    return(name);
+    return name;
    }
 public void setDescription(String D)
    {
@@ -32,7 +34,7 @@ public void setDescription(String D)
    }
 public String getDescription()
    {
-   return(description);
+   return description;
    }
 
 public void setType(String T)
@@ -41,6 +43,14 @@ public void setType(String T)
     }
 public String getType()
     {
-       return(type); 
+       return type; 
     }
+public void setId(int I)
+{
+    this.id=I;
+}
+public int getId()
+{
+return id;
+}
 }
