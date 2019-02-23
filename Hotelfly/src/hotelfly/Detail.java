@@ -12,6 +12,11 @@ package hotelfly;
 public class Detail {
     
     int numberOfPersons;
+    int id;
+    
+   public void setId(int i){
+       id=i;
+   }
    
     public void setNumberOfPerson(int n){
         numberOfPersons=n;
@@ -19,5 +24,9 @@ public class Detail {
     
     public int getNumberOfPerson(){
         return numberOfPersons;
+    }
+    
+    public int getId(){
+        return id;
     }
 }
