@@ -77,6 +77,6 @@ public class Rooms {
     
     public void display()
     {
-        System.out.println("No of rooms: "+Number+"\nCapacity: "+Capacity+"\nType: "+ Type+" Price: "+Price+"$");
+        System.out.println("No of rooms: "+Number+"\nCapacity: "+Capacity+"\nType: "+ Type+"\nPrice: "+Price+"$");
     }
 }

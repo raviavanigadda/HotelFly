@@ -5,6 +5,9 @@
  */
 package hotelfly;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  *
  * @author 1895212
@@ -15,18 +18,23 @@ public class Hotelfly {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        //Creating objects for class
+        Customer c = new Customer("Mr Parry","Micheal","parrym92@gmail.com",43852000,161);
+        Single s = new Single("576 Montrose Ave",15);
+        Rooms r = new Rooms(16,5,2,"Delux Room", 1670.0);
         Booking b = new Booking();
-        Customer c = new Customer();
-        Single s = new Single("576 Montrose Ave, NDG");
-       // Rooms r = new Rooms(5,2,"Delux Room", 1670.0);
-        c.setFirstName("M.Johnson Michelle");
-        c.setPhoneNo(438874456);
-        b.setBookingdate("17-02-2019");
-        b.setDuration(5);
-        System.out.println("\nBooking Date: "+b.BookingDate+"\nCustomer Name: "+c.firstName+"\nPhone no: "+c.phoneNo+
-                "\nAddress: "+s.address+"\nDuration: "+b.Duration+" days");
-        //r.display();
+        Detail d = new Detail(3,143);
+       
+        
+        //Display Details
+        System.out.println("\nBooking Details");
+        //System.out.println("Booking date: "+b.date);
+        c.displayCustomer();
+        r.display();
+        d.displayDetails();
+        s.display();
+        
     }
     
 }
