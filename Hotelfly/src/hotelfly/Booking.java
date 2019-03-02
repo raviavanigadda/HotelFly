@@ -14,27 +14,19 @@ import java.text.SimpleDateFormat;
  * @author 1895212
  */
 public class Booking {
-    public Date BookingDate,EndDate;
-    int Duration,id;
-    Date Bookingdate; // = parseDate("17-02-2019");
+  
+    Date BookingDate,EndDate;
+    String BookD,EndD;
+    int Duration;
     Customer c;
+    Date dt=new Date();
+    static String id;
     
-
-   /* public Booking(Date Bdate, Date Edate, int Duration)
+    public Booking(String Bdate, String Edate, int Duration)
     {
-        this.BookingDate = Bdate;
-        this.EndDate = Edate;
+        this.BookD = Bdate;
+        this.EndD = Edate;
         this.Duration = Duration;
-    }*/
-    
-    public void setId(int I)
-    {
-        this.id=I;
-    }
-    
-    public int getId()
-    {
-        return id;
     }
     
     public void setBookingdate(String Bdate)
@@ -48,6 +40,7 @@ public class Booking {
         return BookingDate;
     }
     
+     /*
      public void setEnddate(String Edate)
     {
         //this.date = Bdate;
@@ -57,7 +50,7 @@ public class Booking {
     public Date getEnddate()
     {
         return EndDate;
-    }
+    }*/
     
     public void setDuration(int Duration)
     {
@@ -69,7 +62,40 @@ public class Booking {
         return Duration;
     }
     
+     public void display()
+    {
+        System.out.println("\nBooking Details:"+"\nBooking id: "+id+"\nBooking Date: "+ BookD+"\nDuration: "+Duration+" days\nEnd Date: "+EndD);
+    }
     
+     public static String custid(String d,String fname,String lname)
+    {
+        char today;
+       
+        String[] datesplit=d.split(" ");
+        
+        String year=datesplit[5].substring(2,4); //03-02-2019
+        String month=datesplit[1].toUpperCase();
+        String date=datesplit[2];
+        
+        int currentdate=Integer.parseInt(date);
+       
+            if(currentdate%2==0)
+            {
+                 today='E';
+            }
+            else
+            {
+                 today='O';
+            }
+           
+        char fn=fname.charAt(0);
+        char ln=lname.charAt(0);
+       
+        id=year+"-"+month+"-"+today+"-"+fn+ln;
+        
+        return id;
+    }
+     
     public static Date parseDate(String date) {
      try {
          return new SimpleDateFormat("dd-MM-yyyy").parse(date);
