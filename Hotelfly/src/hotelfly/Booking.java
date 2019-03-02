@@ -31,7 +31,6 @@ public class Booking {
     
     public void setBookingdate(String Bdate)
     {
-        //this.date = Bdate;
         this.BookingDate = parseDate(Bdate);
     }
     
@@ -40,17 +39,6 @@ public class Booking {
         return BookingDate;
     }
     
-     /*
-     public void setEnddate(String Edate)
-    {
-        //this.date = Bdate;
-        this.BookingDate = parseDate(Edate);
-    }
-    
-    public Date getEnddate()
-    {
-        return EndDate;
-    }*/
     
     public void setDuration(int Duration)
     {
@@ -67,35 +55,7 @@ public class Booking {
         System.out.println("\nBooking Details:"+"\nBooking id: "+id+"\nBooking Date: "+ BookD+"\nDuration: "+Duration+" days\nEnd Date: "+EndD);
     }
     
-     public static String custid(String d,String fname,String lname)
-    {
-        char today;
-       
-        String[] datesplit=d.split(" ");
-        
-        String year=datesplit[5].substring(2,4); //03-02-2019
-        String month=datesplit[1].toUpperCase();
-        String date=datesplit[2];
-        
-        int currentdate=Integer.parseInt(date);
-       
-            if(currentdate%2==0)
-            {
-                 today='E';
-            }
-            else
-            {
-                 today='O';
-            }
-           
-        char fn=fname.charAt(0);
-        char ln=lname.charAt(0);
-       
-        id=year+"-"+month+"-"+today+"-"+fn+ln;
-        
-        return id;
-    }
-     
+          
     public static Date parseDate(String date) {
      try {
          return new SimpleDateFormat("dd-MM-yyyy").parse(date);

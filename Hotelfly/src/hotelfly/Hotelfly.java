@@ -5,6 +5,7 @@
  */
 package hotelfly;
 
+import static hotelfly.Booking.id;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -31,7 +32,7 @@ public class Hotelfly {
         
         Date dt=new Date();
         String date=dt.toString();
-        String id=Booking.custid(date, c.firstName, c.lastName);
+        String id= id(date, c.firstName, c.lastName);
         
         //Display Details
         b.display();
@@ -41,5 +42,33 @@ public class Hotelfly {
         s.display();
         
     }
-    
+        
+    public static String id(String d,String fname,String lname)
+    {
+        char today;
+       
+        String[] datesplit=d.split(" ");
+        
+        String year=datesplit[5].substring(2,4); //03-02-2019
+        String month=datesplit[1].toUpperCase();
+        String date=datesplit[2];
+        
+        int currentdate=Integer.parseInt(date);
+       
+            if(currentdate%2==0)
+            {
+                 today='E';
+            }
+            else
+            {
+                 today='O';
+            }
+           
+        char fn=fname.charAt(0);
+        char ln=lname.charAt(0);
+       
+        id=year+"-"+month+"-"+date+"-"+today+"-"+fn+ln;
+        
+        return id;
+    }
 }
