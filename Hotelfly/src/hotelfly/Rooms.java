@@ -79,4 +79,10 @@ public class Rooms {
     {
         System.out.println("No of rooms: "+Number+"\nCapacity: "+Capacity+"\nType: "+ Type+"\nPrice: "+Price+"$");
     }
+    
+     public static String disp(String T,int cap, double p,int Id)
+      {
+         
+      return T + " " + cap + " "+ p + " "+ Id;
+      }
 }

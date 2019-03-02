@@ -64,4 +64,12 @@ public class Booking {
      }
   }
     
+     public static String disp(String BookD, int Dur, String id)
+      {
+          String BookingD= BookD;
+          String Id = id; 
+          int Duration = Dur;
+      return BookingD+" "+Id+" "+ Duration;
+      }
+    
 }
