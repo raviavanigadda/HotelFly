@@ -44,4 +44,10 @@ public class Corporate extends Customer {
            
       }
     
+        public static String corporateforTest(String name,int id){
+        String nam=name;
+        int Id=id;
+        String r=nam+","+Id;
+        return r;
+    }
 }

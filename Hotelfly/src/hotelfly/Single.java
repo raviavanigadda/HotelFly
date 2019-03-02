@@ -43,7 +43,7 @@ public class Single extends Customer
           System.out.println("Address:" +address+"\nSingle Room id: "+id);
       }   
     
-      public static String disp(String address, int Id)
+      public static String displayforTest(String address, int Id)
       {
       String add= address;
       int id = Id; 
