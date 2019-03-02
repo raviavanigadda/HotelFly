@@ -61,4 +61,9 @@ public class Customer {
         System.out.println("Phone number: "+phoneNo);
         System.out.println("ID: "+id);
     }
+    
+    public static String disp(String fn,String ln,String em,double pn,int id){
+        
+        return fn+" "+ln+" "+em+" "+pn+" "+id;
+    }
 }

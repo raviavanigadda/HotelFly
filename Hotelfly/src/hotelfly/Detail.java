@@ -40,4 +40,9 @@ public class Detail {
         System.out.println("No of Persons: "+ numberOfPersons);
         System.out.println("Detail ID: "+id);
     }
+    
+    public static String disp(int a,int b){
+        
+        return a+" "+b;
+    }
 }
