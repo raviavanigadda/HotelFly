@@ -29,7 +29,7 @@ public class Hotelfly {
         Rooms r = new Rooms(16,5,2,"Delux Room", 1670.0);
         Booking b = new Booking("5-03-2019","10-03-2019",5);
         Detail d = new Detail(3,143);
-        
+        Category ct = new Category("3","Best and classy rooms. Neatly maintained","Condo",154552);
         Date dt=new Date();
         String date=dt.toString();
         String id= id(date, c.firstName, c.lastName);
@@ -40,6 +40,7 @@ public class Hotelfly {
         r.display();
         d.displayDetails();
         s.display();
+        ct.display();
         
     }
         

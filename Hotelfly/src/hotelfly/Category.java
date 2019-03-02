@@ -56,7 +56,7 @@ return id;
 
 public void display()
 { 
-    System.out.println("Delux rooms :"+name+"\ndescription: "+description+"\n Room type :"+type+"\n id :"+id);
+    System.out.println("Delux rooms :"+name+"\nDescription: "+description+"\nRoom type: "+type+"\nId: "+id);
 }
 
 }
