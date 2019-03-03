@@ -11,17 +11,17 @@ package hotelfly;
  */
 public class Category {
 
-    public static void displayforTest(String Name, String Address, int Phone, int id) {
+    public static void displayforTest(String Name, String Address, int Phone) {
         
         }
 String name ,description,type;
-int id;
 
-public Category ( String N,String D,String T,int I)
+
+public Category ( String N,String D,String T)
 {       this.name=N;
         this.description=D;
         this.type=T;
-        this.id=I;
+   
 }
 
 public void setName(String N)
@@ -49,23 +49,16 @@ public String getType()
     {
        return type; 
     }
-public void setId(int I)
-{
-    this.id=I;
-}
-public int getId()
-{
-return id;
-}
+
 
 public void display()
 { 
-    System.out.println("Delux rooms :"+name+"\nDescription: "+description+"\nRoom type: "+type+"\nId: "+id);
+    System.out.println("Delux rooms :"+name+"\nDescription: "+description+"\nRoom type: "+type);
 }
  
-public static String displayforTest(String N,String D,String T,int I)
+public static String displayforTest(String N,String D,String T)
 {
         
-        return N+" "+D+" "+T+" "+I;
+        return N+" "+D+" "+T;
     }
 }

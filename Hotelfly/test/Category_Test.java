@@ -41,9 +41,9 @@ public class Category_Test {
     String name="Delux_Rooms";
     String description="well maintained room";
     String type=" single or double";
-    int id=1;
-    String expResult=name+" "+description+" "+type+" "+id;
-    String result=hotelfly.Category.displayforTest(name,description,type,id);
+   
+    String expResult=name+" "+description+" "+type;
+    String result=hotelfly.Category.displayforTest(name,description,type);
     
      assertEquals(expResult,result);
      

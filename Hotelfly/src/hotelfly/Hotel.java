@@ -12,14 +12,14 @@ package hotelfly;
 public class Hotel {
     String Name;
     String Address;
-    int Phone,id;
+    int Phone;
     
-    public Hotel( String N,String A,int P,int I)
+    public Hotel( String N,String A,int P)
     {
         this.Name=N;
         this.Address=A;
         this.Phone=P; 
-        this.id=I;
+        
     }    
     public void setName( String N)
     {
@@ -45,24 +45,17 @@ public class Hotel {
     {
     return Phone;
     }
-    public void setId(int I)
-   {
-    this.id=I;
-   }
-   public int getId()
-   {
-   return id;
-   }
+    
 
 public void display()
 {
-    System.out.println("Customer name: "+Name+"\nAddress :"+Address+"\nPhone :"+Phone+"\nid :"+id);
+    System.out.println("Customer name: "+Name+"\nAddress :"+Address+"\nPhone :"+Phone);
 }
 
-public static String displayforTest(String N,String A,int P,int I)
+public static String displayforTest(String N,String A,int P)
 {
 
-  return N+" "+A+" "+P+" "+I;
+  return N+" "+A+" "+P;
 
 
     }}

@@ -43,10 +43,10 @@ public class Hotel_Test {
     String Name="name";
     String Address="Street1";
     int Phone=123445;
-    int id=121;
-    String expResult=Name+" "+Address+" "+Phone+" "+id;
+   
+    String expResult=Name+" "+Address+" "+Phone;
      
-    String result=hotelfly.Hotel.displayforTest(Name, Address, Phone, id);
+    String result=hotelfly.Hotel.displayforTest(Name, Address, Phone);
     
      assertEquals(expResult,result);
     
