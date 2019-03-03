@@ -10,6 +10,10 @@ package hotelfly;
  * @author 1894831
  */
 public class Category {
+
+    public static void displayforTest(String Name, String Address, int Phone, int id) {
+        
+        }
 String name ,description,type;
 int id;
 
@@ -58,5 +62,10 @@ public void display()
 { 
     System.out.println("Delux rooms :"+name+"\nDescription: "+description+"\nRoom type: "+type+"\nId: "+id);
 }
-
+ 
+public static String displayforTest(String N,String D,String T,int I)
+{
+        
+        return N+" "+D+" "+T+" "+I;
+    }
 }

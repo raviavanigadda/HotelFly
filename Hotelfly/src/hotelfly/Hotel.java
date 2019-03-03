@@ -14,7 +14,6 @@ public class Hotel {
     String Address;
     int Phone,id;
     
-    
     public Hotel( String N,String A,int P,int I)
     {
         this.Name=N;
@@ -59,4 +58,12 @@ public void display()
 {
     System.out.println("Customer name: "+Name+"\nAddress :"+Address+"\nPhone :"+Phone+"\nid :"+id);
 }
-}
+
+public static String displayforTest(String N,String A,int P,int I)
+{
+
+  return N+" "+A+" "+P+" "+I;
+
+
+    }}
+
